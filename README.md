@@ -1,20 +1,37 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# BYLDR Studio — bb3005 Engine
 
-# Run and deploy your AI Studio app
+React + TypeScript + Three.js building sandbox based on the uploaded remix project.
 
-This contains everything you need to run your app locally.
+## Included
 
-View your app in AI Studio: https://ai.studio/apps/8f353c43-1a1f-4a49-bc9e-758ebcee616b
+- First-person WASD + mouse/touch navigation
+- Brick placement, removal, rotation and undo
+- Brick palette and color selection
+- Mobile virtual joystick
+- Procedural ABS-style brick geometry
+- SSAO
+- Screen-space reflections (SSR)
+- Subtle Bokeh depth of field
+- Linear distance fog synchronized with the studio background
+- ACES filmic tone mapping
+- Dynamic sun angle / orbit controls
+- Dark/light UI
 
-## Run Locally
+## Development
 
-**Prerequisites:**  Node.js
+Node.js 22+ recommended.
 
+```bash
+npm install
+npm run dev
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+The Vite development server runs on port 3000.
+
+## Build
+
+```bash
+npm run build
+```
+
+The repository is intentionally frontend-only and does not require a database.
